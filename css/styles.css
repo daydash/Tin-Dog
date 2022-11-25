@@ -43,7 +43,12 @@ h1 {
 	line-height: 1.5;
 	font-weight: 900;
 }
-
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	line-height: 1.5;
+}
 .features-icon {
 	color: #ef8172;
 	/* padding-bottom: 25%; */
@@ -69,6 +74,35 @@ h1 {
 	color: #ff4c68;
 }
 
+.testimonial-img {
+	/* border-radius: 50%; */
+	width: 10%;
+	border-radius: 100%;
+	margin: 20px;
+}
+
 #features {
 	padding: 7% 15%;
+}
+
+#testimonials {
+	text-align: center;
+	background-color: #ef8172;
+	color: #fff;
+}
+
+.carousel-item-div {
+	padding: 7% 15%;
+}
+
+#press {
+	background-color: #ef8172;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.press-img {
+	width: 15%;
+	/* border-radius: 100%; */
+	margin: 20px 20px 50px;
 }
