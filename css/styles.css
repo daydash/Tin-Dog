@@ -1,13 +1,55 @@
+/* **************************** Combining Selectors **************************** */
+
+/* 
+1. Multiple Selectors
+
+selector1, selector2 {
+
+}
+
+2. Hierarchial Selecotrs
+
+parentSelector childSelector {
+
+}
+
+
+3. Combined Selector (without space between the selectors)
+
+selector1.selector2{
+
+}
+
+selector1#selector2{
+	
+}
+
+#selector1.selector2{
+	
+}
+
+*/
+
 body {
 	font-family: "Montserrat", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+}
+
 #title {
 	background-color: #ff4c68;
 	color: #fff;
 }
 
 .container-fluid {
-	padding: 3% 15%;
+	padding: 3% 15% 7%;
 }
 
 .navbar {
@@ -30,8 +72,21 @@ body {
 }
 
 .iphone-img {
-	width: 60%;
+	max-width: 60%;
 	transform: rotate(25deg);
+	position: absolute;
+
+	/* width: 400px;
+	transform: rotate(25deg);
+	position: absolute;
+	margin: 0 0 0 3%; */
+}
+
+#features {
+	padding: 7% 20%;
+	background-color: #fff;
+	position: relative;
+	/* z-index: 1; */
 }
 
 .download-button {
@@ -81,10 +136,6 @@ h2 {
 	margin: 20px;
 }
 
-#features {
-	padding: 7% 15%;
-}
-
 #testimonials {
 	text-align: center;
 	background-color: #ef8172;
@@ -105,4 +156,55 @@ h2 {
 	width: 15%;
 	/* border-radius: 100%; */
 	margin: 20px 20px 50px;
+}
+
+#pricing {
+	padding: 7% 15%;
+}
+
+.pricing-col {
+	padding: 3% 2%;
+	text-align: center;
+}
+
+@media (max-width: 1028px) {
+	#title {
+		text-align: center;
+	}
+
+	.iphone-img {
+		position: static;
+		transform: rotate(0);
+	}
+}
+
+#cta {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	background-color: #ff4c68;
+	padding: 7% 20%;
+}
+
+.cta-h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 3.5rem;
+	line-height: 1.5;
+	color: #fff;
+	margin-bottom: 2%;
+}
+
+#footer {
+	text-align: center;
+	background-color: #fff;
+	padding: 7% 20%;
+}
+
+.footer-logo {
+	padding: 1%;
+}
+
+.copyright {
+	margin-top: 1%;
+	color: #8f8f8f;
 }
