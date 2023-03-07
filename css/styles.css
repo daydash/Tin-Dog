@@ -71,10 +71,17 @@ h6 {
 	font-weight: 500;
 }
 
+.position-for-img {
+	position: relative;
+}
+
 .iphone-img {
 	max-width: 60%;
 	transform: rotate(25deg);
 	position: absolute;
+	left: 150px;
+
+	/* z-index: 1; */
 
 	/* width: 400px;
 	transform: rotate(25deg);
